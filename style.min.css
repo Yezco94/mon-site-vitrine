@@ -1,2 +1,26 @@
 
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;line-height:1.6}header{background-color:#333;color:white;padding:10px 20px;display:flex;justify-content:space-between;align-items:center}nav ul{list-style:none;display:flex}nav ul li{margin-left:20px}nav ul li a{color:white;text-decoration:none;font-weight:bold}.hero-section{display:flex;justify-content:space-between;align-items:center;padding:50px;background-color:#f4f4f4}.hero-content{max-width:50%}.cta-button{background-color...
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;line-height:1.6}
+header{background-color:#333;color:white;padding:10px 20px;display:flex;justify-content:space-between;align-items:center}
+nav ul{list-style:none;display:flex}nav ul li{margin-left:20px}nav ul li a{color:white;text-decoration:none;font-weight:bold}
+.hero-section{display:flex;justify-content:space-between;align-items:center;padding:50px;background-color:#f4f4f4}
+.hero-content{max-width:50%}
+.cta-button{background-color:#FF1493;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;font-weight:bold;transition:background-color 0.3s ease}
+.cta-button:hover{background-color:#FF69B4}
+.generation-section{padding:50px;text-align:center}
+.sticky-cta{position:fixed;bottom:20px;right:20px;background-color:#8B4513;color:white;padding:10px 20px;border-radius:5px;z-index:1000}
+.testimonial-slider{display:flex;overflow:hidden;transition:transform 0.5s ease}
+.testimonial{flex:1;padding:20px;background-color:#f4f4f4;margin-right:10px;border-radius:10px}
+/* Animations and transitions */
+.generation-section{opacity:0;transform:translateY(20px);transition:all 0.6s ease}
+.generation-section.show{opacity:1;transform:translateY(0)}
+/* Generational styles */
+#cta-60{background-color:#8B4513;color:white;} #cta-80{background-color:#FF1493;color:white;} 
+#cta-2000{background-color:#000000;color:white;} #cta-now{background-color:#98FB98;color:white;}
+
+/* Responsive adjustments for mobile */
+@media(max-width:768px){
+    .hero-section{flex-direction:column;text-align:center}
+    .hero-content{max-width:100%;margin-bottom:20px}
+    .cta-button{font-size:16px;padding:10px 15px}
+    .sticky-cta{font-size:14px}
+}
